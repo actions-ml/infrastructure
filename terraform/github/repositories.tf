@@ -15,7 +15,7 @@ locals {
     }
 
     setup-ocaml = {
-      description  = "GitHub Action for the OCaml programming language"
+      description = "GitHub Action for the OCaml programming language"
       teams = [
         "committers",
       ]
