@@ -1,0 +1,21 @@
+{
+  "builders": [
+    {
+      "type": "scaleway",
+      "project_id": "5831d46b-06cb-413a-85bf-0c048444d69e",
+      "zone": "fr-par-1",
+      "image_name": "debian_reverse_proxy",
+      "snapshot_name": "debian_reverse_proxy_snapshot",
+      "image": "77882134-b04d-456a-a891-be2995aae7d8",
+      "commercial_type": "DEV1-S",
+      "remove_volume": true,
+      "ssh_username": "root"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": ["apt update", "apt upgrade -y", "apt install -y nginx"]
+    }
+  ]
+}
