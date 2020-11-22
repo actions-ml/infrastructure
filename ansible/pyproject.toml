@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ansible"
+version = "0.1.0"
+description = "Ansible configuration files"
+authors = ["Sora Morimoto <sora@morimoto.io>"]
+license = "ISC"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+molecule = "^3.1.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
