@@ -3,6 +3,10 @@ locals {
     actions-ml-infrastructure = {
       acl = "private"
     }
+
+    actions-ml-cache = {
+      acl = "public-read"
+    }
   }
 }
 
