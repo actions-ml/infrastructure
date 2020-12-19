@@ -14,13 +14,6 @@ locals {
       ]
     }
 
-    github-workflow-gen = {
-      description = "Generate workflow file for binary cache generation"
-      teams = [
-        "committers",
-      ]
-    }
-
     setup-ocaml = {
       description = "GitHub Action for the OCaml programming language"
       teams = [
