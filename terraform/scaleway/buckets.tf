@@ -1,19 +1,14 @@
 locals {
-  object_buckets = {
-    actions-ml-infrastructure = {
-      acl = "private"
-    }
-
-    actions-ml-cache = {
-      acl = "public-read"
-    }
-  }
+  object_buckets = [
+    "actions-ml-infrastructure",
+    "cache.actions-ml.org",
+  ]
 }
 
 resource "scaleway_object_bucket" "object_buckets" {
-  for_each = local.object_buckets
+  for_each = toset(local.object_buckets)
 
   name   = each.key
-  acl    = each.value.acl
+  acl    = "private"
   region = "fr-par"
 }
