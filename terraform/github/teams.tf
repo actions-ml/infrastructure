@@ -3,6 +3,7 @@ locals {
     core = {
       description = "The people with push access"
       maintainers = [
+        "avsm",
         "smorimoto",
       ]
     }
