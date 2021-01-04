@@ -1,6 +1,6 @@
 locals {
   github_teams = {
-    committers = {
+    core = {
       description = "The people with push access"
       maintainers = [
         "smorimoto",

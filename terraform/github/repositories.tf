@@ -10,21 +10,21 @@ locals {
     ".github" = {
       description = "actions-ml meta repository"
       teams = [
-        "actions-ops",
+        "core",
       ]
     }
 
     compiler-cache = {
       description = "Generate compiler binary caches for setup-ocaml"
       teams = [
-        "committers",
+        "core",
       ]
     }
 
     setup-ocaml = {
       description = "GitHub Action for the OCaml programming language"
       teams = [
-        "committers",
+        "core",
       ]
     }
   }
