@@ -14,6 +14,13 @@ locals {
       ]
     }
 
+    actions = {
+      description = "GitHub Actions for the OCaml programming language"
+      teams = [
+        "core",
+      ]
+    }
+
     compiler-cache = {
       description = "Generate compiler binary caches for setup-ocaml"
       teams = [
