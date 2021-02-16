@@ -21,6 +21,13 @@ locals {
       ]
     }
 
+    cache-statistics = {
+      description = "Web page for showing cache statistics"
+      teams = [
+        "core",
+      ]
+    }
+
     compiler-cache = {
       description = "Generate compiler binary caches for setup-ocaml"
       teams = [
