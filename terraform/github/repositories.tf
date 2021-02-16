@@ -22,7 +22,8 @@ locals {
     }
 
     cache-statistics = {
-      description = "Web page for showing cache statistics"
+      description  = "Web page for showing cache statistics"
+      homepage_url = "https://cache.actions-ml.org"
       teams = [
         "core",
       ]
